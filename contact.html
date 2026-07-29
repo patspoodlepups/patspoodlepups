@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pat's Poodle Pups</title>
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/index.html" class="mobile-logo">
+        <img src="images/logo.png" class="logo" alt="Pat's Poodle Pups Logo" />
+      </a>
+
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav" id="nav-menu">
+        <a href="/">Home</a>
+        <a href="/amber.html">Best Mommy Amber</a>
+
+        <a href="/" class="desktop-logo">
+          <img
+            src="images/logo.png"
+            class="logo"
+            alt="Pat's Poodle Pups Logo" />
+        </a>
+
+        <a href="/our-story.html">Our Story</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <section class="hero-contact">
+      <div>
+        <h2>Contact Us</h2>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdhYru-Zj1U61G9AOC0RL7cTXOW9glm_6cI5-a4-8yZkHVe0g/viewform?usp=sharing&ouid=100446442615634230932"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-contact"
+          >Reserve your Puppy</a
+        >
+      </div>
+    </section>
+
+    <main>
+      <!-- Contact Hero -->
+      <section>
+        <h1>Contact Pat's Poodle Pups</h1>
+        <p>
+          We'd love to help you find your perfect puppy! Whether you have
+          questions about available litters, the adoption process, or would like
+          to schedule a visit, we're here to help.
+        </p>
+      </section>
+
+      <!-- Contact Information -->
+      <section class="contact-info">
+        <div class="contact-card">
+          <h2>Call or Text</h2>
+          <p><strong>(520) 906-8115</strong></p>
+          <p>We're happy to answer your questions.</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>📧 Email</h2>
+          <p>
+            <a href="mailto:info@patspoodlepups.com">
+              info@patspoodlepups.com
+            </a>
+          </p>
+          <p>We'll respond as soon as possible.</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>📍 Location</h2>
+          <p>Tucson, Arizona</p>
+          <p>Visits are available by appointment only.</p>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(520) 555-1234" />
+          </div>
+
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest" name="interest">
+              <option value="">Select One</option>
+              <option>Toy Poodle</option>
+              <option>Miniature Poodle</option>
+              <option>Standard Poodle</option>
+              <option>Current Litter</option>
+              <option>Future Litter</option>
+              <option>General Question</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Tell us how we can help..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>Do your puppies come vaccinated?</h3>
+          <p>
+            Yes! Every puppy receives age-appropriate vaccinations and regular
+            veterinary care before going home.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can we meet the puppies?</h3>
+          <p>
+            Absolutely! Visits are available by appointment to ensure each
+            family receives plenty of time with the puppies.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you require a deposit?</h3>
+          <p>
+            Yes. A deposit is required to reserve your puppy until pickup day.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Contact Us</h2>
+
+      <br />
+
+      <p>Pat's Poodle Pups</p>
+      <p>(520) 906-8115</p>
+      <p class="footer-link">
+        <img src="/images/bone.png" /><a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdhYru-Zj1U61G9AOC0RL7cTXOW9glm_6cI5-a4-8yZkHVe0g/viewform?usp=sharing&ouid=100446442615634230932"
+          >Take Home survey</a
+        ><img src="/images/bone.png" />
+      </p>
+
+      <br />
+
+      <p>&copy; 2026 Pat's Poodle Pups and Moore. All Rights Reserved.</p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

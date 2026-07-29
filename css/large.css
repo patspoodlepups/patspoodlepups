@@ -1,0 +1,17 @@
+@media only screen and (min-width: 801px) {
+  .mobile-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    display: flex;
+  }
+
+  .hero-contact {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url('/images/contact-hero-large.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
