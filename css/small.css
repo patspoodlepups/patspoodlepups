@@ -196,6 +196,14 @@ nav a:hover {
   padding-left: 20px;
   line-height: 1.6;
 }
+
+.about-us-words-contact {
+  font-size: 20px;
+  padding-left: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: center;
+}
 .contact-img {
   float: right;
   width: 500px;
@@ -289,7 +297,7 @@ section {
 .gooddog {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .gooddog img {
