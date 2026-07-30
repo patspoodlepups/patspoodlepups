@@ -196,6 +196,12 @@ nav a:hover {
   padding-left: 20px;
   line-height: 1.6;
 }
+.contact-img {
+  float: right;
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
 
 .amber {
   font-family: 'Dancing Script', cursive;
@@ -251,6 +257,19 @@ nav a:hover {
     color 0.3s ease;
   display: inline-block;
   margin-top: 40px;
+}
+.btn-reserve {
+  background: #e8b7b7;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  display: inline-block;
+  margin: 20px 0;
 }
 
 /* ==========================
@@ -385,6 +404,9 @@ footer {
 
 .footer-link a:hover {
   text-decoration: underline;
+}
+footer p a {
+  margin: 5px;
 }
 
 .social-media {
