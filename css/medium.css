@@ -1,9 +1,14 @@
-@media (max-width: 800px) {
+@media (min-width: 801px) {
   .about {
     grid-template-columns: 1fr;
   }
 
   .hero h2 {
     font-size: 40px;
+  }
+
+  .gooddog {
+    gap: 0;
+    flex-direction: row;
   }
 }

@@ -220,6 +220,9 @@ nav a:hover {
   list-style-image: url(/images/bone.png);
   list-style-position: inside;
 }
+.why h2 {
+  color: #444;
+}
 .head-our-story {
   font-size: 1.5em;
   font-weight: 500;
@@ -296,8 +299,10 @@ section {
 
 .gooddog {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  gap: 50px;
 }
 
 .gooddog img {
@@ -312,6 +317,10 @@ section {
 .gooddog img:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.find-us {
+  font: 1em sans-serif;
+  align-self: center;
 }
 
 /* ==========================
@@ -431,6 +440,19 @@ footer p a {
 
 .social-media a {
   border-radius: 100%;
+}
+
+a[href^='tel:'] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^='tel:']:visited {
+  color: inherit;
+}
+
+a[href^='tel:']:hover {
+  text-decoration: underline;
 }
 
 /* ==========================
