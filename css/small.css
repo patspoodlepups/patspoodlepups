@@ -9,9 +9,21 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: #fafafa;
   color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* ==========================
@@ -130,17 +142,12 @@ nav a:hover {
 }
 
 .hero-contact {
-  height: 500px;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url('/images/contact-hero-large.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-end;
-  color: #f6e7cf;
+  padding: 0;
+}
+
+.hero-contact img {
+  width: 100%;
+  display: block;
 }
 
 .hero-our-story {
@@ -160,6 +167,7 @@ nav a:hover {
 .our-story img {
   max-width: 100%;
   height: auto;
+  border-radius: 12px;
 }
 .our-story p {
   padding: 20px;
@@ -176,20 +184,17 @@ nav a:hover {
   display: flex;
 }
 .about-us {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
+  margin-top: 50px;
 }
 .about-us-float-left {
-  float: left;
-  width: 500px;
-  padding: 20px;
-  margin-right: 30px;
+  width: 100%;
+  float: none;
 }
 .about-us-float-right {
-  float: right;
-  width: 500px;
-  padding: 20px;
-  margin-left: 30px;
+  width: 100%;
+  float: none;
 }
 .about-us-words {
   font-size: 20px;
@@ -205,10 +210,8 @@ nav a:hover {
   text-align: center;
 }
 .contact-img {
-  float: right;
-  width: 500px;
-  padding: 20px;
-  margin-bottom: 30px;
+  width: 100%;
+  float: none;
 }
 
 .amber {
@@ -233,6 +236,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /* ==========================
@@ -374,16 +378,20 @@ section {
    ABOUT
    ========================== */
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
+/* .about {
+  margin-bottom: 50px;
+} */
 
 .about img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
+}
+.amber-pics {
+  margin-top: 60px;
+  display: grid;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 /* ==========================
@@ -460,7 +468,7 @@ a[href^='tel:']:hover {
    ========================== */
 
 @media (max-width: 800px) {
-  .header {
+  header {
     justify-content: space-between;
     padding: 10px 20px;
   }

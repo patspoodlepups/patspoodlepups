@@ -1,4 +1,4 @@
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 60em) {
   .mobile-logo {
     display: none;
   }
@@ -13,5 +13,28 @@
       url('/images/contact-hero-large.jpg');
     background-size: cover;
     background-position: center;
+  }
+
+  .about-us-float-left {
+    float: left;
+    width: 500px;
+    padding: 20px;
+    margin-right: 30px;
+    border-radius: 12px;
+  }
+  .about-us-float-right {
+    float: right;
+    width: 500px;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 12px;
+  }
+
+  .contact-img {
+    float: right;
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
   }
 }

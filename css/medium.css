@@ -1,6 +1,6 @@
-@media (min-width: 801px) {
+@media only screen and (min-width: 40em) {
   .about {
-    grid-template-columns: 1fr;
+    margin-bottom: 50px;
   }
 
   .hero h2 {
@@ -10,5 +10,11 @@
   .gooddog {
     gap: 0;
     flex-direction: row;
+  }
+
+  .amber-pics {
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
   }
 }
