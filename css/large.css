@@ -37,4 +37,15 @@
     margin-bottom: 30px;
     border-radius: 12px;
   }
+
+  .homepage-images {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .gucci {
+    max-width: 300px;
+  } */
 }

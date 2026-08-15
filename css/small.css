@@ -114,6 +114,7 @@ nav a:hover {
   align-items: center;
   text-align: center;
   color: #f6e7cf;
+  margin-bottom: 50px;
 }
 
 .hero h2 {
@@ -196,6 +197,11 @@ nav a:hover {
   width: 100%;
   float: none;
 }
+
+/* .gucci {
+  max-height: 400px;
+  width: auto;
+} */
 .about-us-words {
   font-size: 20px;
   padding-left: 20px;
@@ -208,6 +214,13 @@ nav a:hover {
   line-height: 1.6;
   max-width: 600px;
   text-align: center;
+}
+
+.bottom-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 .contact-img {
   width: 100%;
@@ -249,15 +262,22 @@ nav a:hover {
 }
 
 .homepage-images {
-  margin-top: 50px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
 }
 
 .homepage-images img {
   width: 400px;
   height: auto;
+  border-radius: 12px;
+}
+
+.homepage-words {
+  font-size: 20px;
+  line-height: 1.6;
 }
 /* ==========================
    Carousel
@@ -286,7 +306,7 @@ nav a:hover {
 .card {
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   padding: 24px;
   min-height: 250px;
   display: flex;
@@ -295,6 +315,7 @@ nav a:hover {
   flex-shrink: 0;
   /* Dynamic fallback sizing */
   width: 100%;
+  height: fit-content;
 }
 .card h3 {
   color: #1f2937;
@@ -302,14 +323,14 @@ nav a:hover {
 }
 .card p {
   color: #4b5563;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
 /* Navigation Buttons */
 .nav-btn {
   position: absolute;
-  top: 50%;
+  top: 20%;
   transform: translateY(-50%);
   background: #ffffff;
   border: 1px solid #e5e7eb;
