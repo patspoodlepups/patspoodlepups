@@ -7,13 +7,13 @@
     display: flex;
   }
 
-  .hero-contact {
+  /* .hero-contact {
     background:
       linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
       url('/images/contact-hero-large.jpg');
     background-size: cover;
     background-position: center;
-  }
+  } */
 
   .about-us-float-left {
     float: left;
@@ -28,6 +28,9 @@
     padding: 20px;
     margin-left: 30px;
     border-radius: 12px;
+  }
+  .gucci {
+    width: 350px;
   }
 
   .contact-img {

@@ -184,6 +184,7 @@ nav a:hover {
   height: auto;
   display: flex;
 }
+
 .about-us {
   /* width: 80%; */
   margin: 0 auto;
@@ -198,10 +199,9 @@ nav a:hover {
   float: none;
 }
 
-/* .gucci {
-  max-height: 400px;
-  width: auto;
-} */
+.gucci {
+  width: 300px;
+}
 .about-us-words {
   font-size: 20px;
   padding-left: 20px;
@@ -522,10 +522,20 @@ section {
   border-radius: 12px;
 }
 .amber-pics {
-  margin-top: 60px;
+  clear: both;
   display: grid;
-  justify-content: space-around;
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 500px));
+  gap: 25px;
+  justify-content: center;
+}
+.amber-pics img {
+  width: 100%;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ==========================
@@ -543,6 +553,32 @@ section {
   padding: 25px;
   border-left: 6px solid #e8b7b7;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================
+   PUPPIES
+   ========================== */
+
+.pup-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 500px));
+  gap: 25px;
+  justify-content: center;
+}
+.pup-cards {
+  width: 100%;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.pup-cards p {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /* ==========================
