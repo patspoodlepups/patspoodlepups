@@ -228,8 +228,9 @@ nav a:hover {
 }
 
 .amber {
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
 }
 .why ul {
   margin-bottom: 50px;
