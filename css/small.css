@@ -581,6 +581,12 @@ section {
   text-align: center;
 }
 
+.black-line {
+  border: none; /* Removes the default browser styling */
+  border-top: 2px solid #000000; /* Sets a solid black line 2 pixels thick */
+  width: 100%; /* Controls the width of the line */
+}
+
 /* ==========================
    FOOTER
    ========================== */
