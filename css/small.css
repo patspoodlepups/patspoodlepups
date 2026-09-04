@@ -97,6 +97,21 @@ nav a:hover {
   font-size: 32px;
   cursor: pointer;
 }
+.grand-hotel-regular {
+  font-family: 'Grand Hotel', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.since {
+  display: none;
+  padding: 5px;
+  font-family: 'Grand Hotel', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: black;
+}
 
 /* ==========================
    HERO
@@ -252,7 +267,17 @@ nav a:hover {
 
 .homepage-words {
   text-align: center;
+  padding: 5px;
 }
+
+.set-apart {
+  font-size: 20px;
+}
+
+.set-apart li {
+  padding: 10px;
+}
+
 .head-our-story {
   font-size: 1.5em;
   font-weight: 500;
@@ -278,11 +303,25 @@ nav a:hover {
   width: 400px;
   height: auto;
   border-radius: 12px;
+  border: #000000 solid 4px;
 }
 
 .homepage-words {
   font-size: 20px;
   line-height: 1.6;
+}
+
+.homepage-header {
+  font-family: 'Grand Hotel', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.testimonial-anchor {
+  color: #333;
 }
 /* ==========================
    Carousel
@@ -664,6 +703,10 @@ a[href^='tel:']:hover {
 
   .desktop-logo {
     display: none;
+  }
+
+  .since {
+    display: block;
   }
 
   .logo {
