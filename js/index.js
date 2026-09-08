@@ -3,38 +3,44 @@ function toggleMenu() {
 }
 
 // Card testimonials
+// Card testimonials
 const track = document.getElementById('carouselTrack');
+const viewport = document.querySelector('.carousel-viewport');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.carousel-track .card');
 
 let currentIndex = 0;
 
+// Always show one testimonial
 function getVisibleCardsCount() {
-  if (window.innerWidth <= 640) return 1;
-  if (window.innerWidth <= 1024) return 2;
-  return 3;
+  return 1;
 }
 
 function updateCarousel() {
   const visibleCards = getVisibleCardsCount();
   const cardWidth = cards[0].getBoundingClientRect().width;
 
-  // Pull the track gap value dynamically from computed CSS styles
   const gap = parseFloat(window.getComputedStyle(track).gap) || 0;
 
-  // Calculate transform step sizing (width of single card + gap size)
+  // Move one card at a time
   const amountToMove = (cardWidth + gap) * currentIndex;
   track.style.transform = `translateX(-${amountToMove}px)`;
 
-  // Handle disabled states for endpoints
+  // Find height of current card
+  const currentCard = cards[currentIndex];
+
+  if (currentCard) {
+    viewport.style.height = `${currentCard.getBoundingClientRect().height}px`;
+  }
+
+  // Disable buttons at beginning/end
   prevBtn.disabled = currentIndex === 0;
-  nextBtn.disabled = currentIndex >= cards.length - visibleCards;
+  nextBtn.disabled = currentIndex >= cards.length - 1;
 }
 
 nextBtn.addEventListener('click', () => {
-  const visibleCards = getVisibleCardsCount();
-  if (currentIndex < cards.length - visibleCards) {
+  if (currentIndex < cards.length - 1) {
     currentIndex++;
     updateCarousel();
   }
@@ -47,15 +53,8 @@ prevBtn.addEventListener('click', () => {
   }
 });
 
-// Re-calculate positioning on window resizing events
 window.addEventListener('resize', () => {
-  const visibleCards = getVisibleCardsCount();
-  // Snap back if resize pushes bounds out of index range
-  if (currentIndex > cards.length - visibleCards) {
-    currentIndex = Math.max(0, cards.length - visibleCards);
-  }
   updateCarousel();
 });
 
-// Run calculation once during page setup
-updateCarousel();
+window.addEventListener('load', updateCarousel);

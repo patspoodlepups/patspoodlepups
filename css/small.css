@@ -26,6 +26,12 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  font-family: 'Patua One', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ==========================
    HEADER & NAVIGATION
    ========================== */
@@ -97,16 +103,11 @@ nav a:hover {
   font-size: 32px;
   cursor: pointer;
 }
-.grand-hotel-regular {
-  font-family: 'Grand Hotel', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .since {
   display: none;
   padding: 5px;
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'Patua One', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -261,6 +262,9 @@ nav a:hover {
   padding: 5px;
 }
 .why h2 {
+  font-family: 'Patua One', serif;
+  font-weight: 400;
+  font-style: normal;
   color: #444;
   text-align: center;
 }
@@ -313,7 +317,7 @@ nav a:hover {
 }
 
 .homepage-header {
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'Patua One', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -336,46 +340,50 @@ nav a:hover {
   margin: 0 auto;
   padding: 20px 0;
 }
+
 .carousel-viewport {
   overflow: hidden;
   width: 100%;
+  transition: height 0.4s ease;
 }
+
 .carousel-track {
   display: flex;
   gap: 20px;
   transition: transform 0.4s ease-in-out;
   will-change: transform;
+  align-items: flex-start;
 }
 
-/* Card Component */
 .card {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   padding: 24px;
   min-height: 250px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
-  /* Dynamic fallback sizing */
   width: 100%;
-  height: fit-content;
 }
-.card h3 {
-  color: #1f2937;
-  margin-bottom: 10px;
-}
+
 .card p {
   color: #4b5563;
   font-size: 20px;
   line-height: 1.5;
 }
 
+.card h3 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
 /* Navigation Buttons */
 .nav-btn {
   position: absolute;
-  top: 20%;
+  top: 240px;
   transform: translateY(-50%);
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -404,18 +412,6 @@ nav a:hover {
 .nav-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 1024px) {
-  .card {
-    width: calc((100% - 20px) / 2);
-  }
-}
-@media (max-width: 640px) {
-  .card {
-    width: 100%;
-  }
 }
 
 /* ==========================
@@ -475,6 +471,9 @@ section {
 }
 
 .section-title {
+  font-family: 'Patua One', serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   margin-bottom: 50px;
   color: #444;
