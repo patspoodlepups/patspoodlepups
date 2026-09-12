@@ -17,4 +17,12 @@
   .why h2 {
     text-align: left;
   }
+
+  .homepage-images img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    border: #000000 solid 4px;
+    margin: 10px;
+  }
 }
